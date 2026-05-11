@@ -1,7 +1,6 @@
 import Foundation
 
-public final class Matrix
-{
+public final class Matrix {
 	public enum MatrixError: Error {
 		case invalid
 	}

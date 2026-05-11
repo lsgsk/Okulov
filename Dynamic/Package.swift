@@ -15,6 +15,7 @@ let package = Package(
 		.executable(name: "E1.7", targets: ["E1.7"]),
 		.executable(name: "E1.8", targets: ["E1.8"]),
 		.executable(name: "E1.9", targets: ["E1.9"]),
+		.executable(name: "E1.10", targets: ["E1.10"]),
 	],
 	targets: [
 		.target(name: "Matrix"),
@@ -31,6 +32,7 @@ let package = Package(
 		.executableTarget(name: "E1.7", dependencies: ["SimpleMatrix"], path: "Sources/1/E1.7"),
 		.executableTarget(name: "E1.8", dependencies: ["SimpleMatrix"], path: "Sources/1/E1.8"),
 		.executableTarget(name: "E1.9", dependencies: ["SimpleMatrix"], path: "Sources/1/E1.9"),
+		.executableTarget(name: "E1.10", dependencies: ["SimpleMatrix"], path: "Sources/1/E1.10"),
 		.testTarget(name: "C1.3T", dependencies: ["C1.3", "Matrix"], path: "Tests/1/C1.3T"),
 		.testTarget(name: "C1.4T", dependencies: ["C1.4", "Matrix"], path: "Tests/1/C1.4T"),
 		.testTarget(name: "E1.1T", dependencies: ["E1.1", "Matrix"], path: "Tests/1/E1.1T"),
